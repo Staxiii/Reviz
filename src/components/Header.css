@@ -1,0 +1,37 @@
+.header {
+  background-color: #53c0e9;
+  height: 100px; /* ← plus grand */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px; /* ← plus d'espace sur les côtés */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.nav-links {
+  display: flex;
+  gap: 200px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+.logo-image {
+  height: 120px;
+  object-fit: contain;
+}
+
+.logo-image:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
