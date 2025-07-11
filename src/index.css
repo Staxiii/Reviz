@@ -1,0 +1,33 @@
+.app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: #48c2f8;       /* ou ta couleur */
+    display: flex;
+    align-items: center;             /* centre verticalement logo et nav */
+    z-index: 100;
+  }
+  
+  .logo {
+    height: 60px;                    /* ajuste la taille du logo */
+  }
+  
+  .app-header nav {
+    margin: 0 auto;                  /* centre la nav horizontalement */
+    display: flex;
+    gap: 2rem;                       /* espace entre les liens */
+  }
+  
+  .app-header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  main {
+    padding-top: 80px;               /* décale le contenu sous le header */
+  }
+  
