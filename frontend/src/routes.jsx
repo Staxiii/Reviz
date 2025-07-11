@@ -18,7 +18,7 @@ export default function AppRoutes() {
         <Route path="/solo"       element={<Solo />} />
         <Route path="/multiplayer" element={<Multiplayer />} />
         <Route path="/stats"      element={<Statistics />} />
-        <Route path="/lyrics/:slug" element={<Lyrics />} />
+          <Route path="/lyrics/:slug" element={<LyricsViewer />} />
       </Routes>
     </Suspense>
   )

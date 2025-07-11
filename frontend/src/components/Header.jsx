@@ -17,6 +17,7 @@ export default function Header() {
           <Link to="/solo">Solo</Link>
           <Link to="/multiplayer">Multijoueur</Link>
           <Link to="/stats">Stats</Link>
+          <Link to="/lyrics">Lyrics</Link>
         </nav>
       </div>
     </header>
