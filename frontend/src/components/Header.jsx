@@ -1,17 +1,24 @@
-import React from 'react';
-import './Header.css';
+// src/components/Header.jsx
+import React from 'react'
+import './Header.css'     // <— exactement comme ça
+import { Link } from 'react-router-dom'
+import revizLogo from '../assets/reviz.png'
 
-const Header = () => {
+
+export default function Header() {
   return (
-    <header className="header">
-    <img src="/src/assets/reviz.png" alt="Logo Réviz" className="logo-image" />
-      <nav className="nav-links">
-        <a href="#">placeholder</a>
-        <a href="#">placeholder</a>
-        <a href="#">placeholder</a>
-      </nav>
+    <header className="app-header">
+      <div className="header-inner">
+        <Link to="/" className="logo-link">
+          <img src={revizLogo} alt="Reviz Logo" className="logo" />
+        </Link>
+        <nav className="nav-links">
+          <Link to="/">Home</Link>
+          <Link to="/solo">Solo</Link>
+          <Link to="/multiplayer">Multijoueur</Link>
+          <Link to="/stats">Stats</Link>
+        </nav>
+      </div>
     </header>
-  );
-};
-
-export default Header;
+  )
+}
