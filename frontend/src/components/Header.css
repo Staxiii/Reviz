@@ -1,37 +1,55 @@
-.header {
-  background-color: #53c0e9;
-  height: 100px; /* ← plus grand */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 100px; /* ← plus d'espace sur les côtés */
+/* Header.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.app-header {
+  background-color: #2c3e50 !important;          /* bleu marine foncé */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
-  z-index: 1000;
-  box-sizing: border-box;
+  width: 100%;
+  z-index: 100;
 }
 
-.nav-links {
+
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
   display: flex;
-  gap: 200px;
+  align-items: center;
+  height: 64px;
+  justify-content: space-between;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 12px;
+}
+
+.app-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .nav-links a {
-  color: white;
+  font-family: 'Montserrat', sans-serif;
+  color: #ecf0f1;                      /* gris clair */
+  margin-left: 24px;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
 }
 
-
-.logo-image {
-  height: 120px;
-  object-fit: contain;
-}
-
-.logo-image:hover {
-  opacity: 0.9;
-  cursor: pointer;
+.nav-links a:hover {
+  color: #ffffff;
 }
